@@ -1,0 +1,46 @@
+:root {
+	--background-color: #1a1a1a;
+	--text-color: #dcd7c9;
+	--primary-color: #d4e4bc;
+	--link-color: #d4e4bc;
+}
+
+html {
+	background-color: var(--background-color);
+	color: var(--text-color);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: "Spectral", serif;
+}
+
+.page-container {
+	width: 100%;
+	padding: 0 1rem;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+	.page-container {
+		padding: 0 2rem;
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.page-container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.page-container {
+		max-width: 1080px;
+	}
+}
