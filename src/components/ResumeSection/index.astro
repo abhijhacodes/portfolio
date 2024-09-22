@@ -1,0 +1,18 @@
+---
+import { Icon } from "astro-icon/components";
+
+import "./styles.css";
+---
+
+<a
+	href={import.meta.env.PUBLIC_RESUME_LINK}
+	target="_blank"
+	class="resume-link"
+>
+	<h3>View full resume</h3>
+	<Icon
+		name="ri:arrow-right-up-line"
+		title="Resume"
+		class="external-link"
+	/>
+</a>

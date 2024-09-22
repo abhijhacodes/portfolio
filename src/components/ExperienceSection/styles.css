@@ -47,6 +47,7 @@
 .external-link {
 	color: var(--primary-color);
 	transition: transform 0.2s ease-in-out;
+	font-size: 1.25rem;
 }
 
 .external-link:hover {

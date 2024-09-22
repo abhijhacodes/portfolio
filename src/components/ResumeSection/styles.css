@@ -1,0 +1,19 @@
+.resume-link {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--primary-color);
+	text-decoration: none;
+	opacity: 0;
+	animation: slide-down-on-load 0.5s linear 2s forwards;
+}
+
+.resume-link:hover {
+	color: var(--highlight-color);
+}
+
+@media (min-width: 768px) {
+	.resume-link {
+		animation: slide-down-on-load 0.5s linear 2.5s forwards;
+	}
+}
