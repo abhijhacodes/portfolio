@@ -3,13 +3,13 @@
 	flex-direction: column;
 	gap: 2rem;
 	opacity: 0;
-	animation: slide-down-on-load 0.5s linear 2s forwards;
+	animation: slide-down-on-load 0.5s linear 1.5s forwards;
 }
 
 .companies {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 1rem;
 }
 
 .company-logo {
@@ -18,10 +18,20 @@
 	border-radius: 50%;
 }
 
+.experience-card {
+	border-radius: 1rem;
+	padding: 1rem 0;
+}
+
+.experience-card:hover {
+	color: var(--primary-color);
+}
+
 .experience-head {
 	display: flex;
 	align-items: center;
 	gap: 1rem;
+	cursor: pointer;
 }
 
 .company-description {
@@ -32,4 +42,20 @@
 
 .company-description > p {
 	color: var(--secondary-text-color);
+}
+
+.external-link {
+	color: var(--primary-color);
+	transition: transform 0.2s ease-in-out;
+}
+
+.external-link:hover {
+	color: var(--highlight-color);
+	transform: translate(2px, -2px);
+}
+
+@media (min-width: 768px) {
+	.experience-container {
+		animation: slide-down-on-load 0.5s linear 2s forwards;
+	}
 }
