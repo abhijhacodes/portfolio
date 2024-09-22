@@ -1,0 +1,4 @@
+user-agent: *
+Allow: /
+
+Sitemap: https://abhijha.in/sitemap-index.xml
