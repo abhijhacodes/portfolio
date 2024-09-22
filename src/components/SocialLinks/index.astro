@@ -9,11 +9,7 @@ import SocialIconWithLink from "./SocialIconWithLink.astro";
 <div class="social-icons-container">
 	{
 		SocialLinksData.map((socialLink) => (
-			<SocialIconWithLink
-				href={socialLink.url}
-				icon={socialLink.iconName}
-				title={socialLink.title}
-			/>
+			<SocialIconWithLink {...socialLink} />
 		))
 	}
 </div>

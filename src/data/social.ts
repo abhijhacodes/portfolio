@@ -1,4 +1,6 @@
-export const SocialLinksData: SocialLink[] = [
+import type { Props as SocialLinkProps } from "../components/SocialLinks/SocialIconWithLink.astro";
+
+export const SocialLinksData: SocialLinkProps[] = [
 	{
 		title: "Linkedin",
 		url: "https://www.linkedin.com/in/abhijhacodes/",
