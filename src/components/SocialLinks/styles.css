@@ -5,7 +5,7 @@
 	justify-content: space-around;
 	padding: 0.5rem 1rem;
 	border: 1px solid var(--primary-color);
-	border-radius: 1rem;
+	border-radius: 2rem;
 	position: fixed;
 	bottom: 0.5rem;
 	background-color: var(--background-color);
@@ -15,6 +15,14 @@
 .social-icon {
 	font-size: 1.25rem;
 	color: var(--primary-color);
+	transition:
+		color 0.3s ease-in-out,
+		transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+	color: var(--highlight-color);
+	transform: scale(1.2);
 }
 
 @media (min-width: 768px) {

@@ -9,5 +9,18 @@ img {
 }
 
 p {
+	opacity: 0;
 	margin: 1rem 0;
+}
+
+.highlighted-text {
+	color: var(--highlight-color);
+}
+
+.about-p-1 {
+	animation: slide-down-on-load 0.5s linear 0.5s forwards;
+}
+
+.about-p-2 {
+	animation: slide-down-on-load 0.5s linear 1s forwards;
 }

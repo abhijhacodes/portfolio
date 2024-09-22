@@ -1,37 +1,19 @@
 ---
-import SocialIconWithLink from "./SocialIconWithLink.astro";
-
 import "./styles.css";
+
+import { SocialLinksData } from "../../data/social";
+
+import SocialIconWithLink from "./SocialIconWithLink.astro";
 ---
 
 <div class="social-icons-container">
-	<SocialIconWithLink
-		href="https://leetcode.com/bitmasker"
-		icon="ri:linkedin-fill"
-		title="Linkedin"
-	/>
-
-	<SocialIconWithLink
-		href="https://leetcode.com/bitmasker"
-		icon="ri:github-line"
-		title="Github"
-	/>
-
-	<SocialIconWithLink
-		href="https://leetcode.com/bitmasker"
-		icon="simple-icons:leetcode"
-		title="Leetcode"
-	/>
-
-	<SocialIconWithLink
-		href="https://leetcode.com/bitmasker"
-		icon="simple-icons:gmail"
-		title="Email"
-	/>
-
-	<SocialIconWithLink
-		href="https://leetcode.com/bitmasker"
-		icon="ri:twitter-x-line"
-		title="Twitter/X"
-	/>
+	{
+		SocialLinksData.map((socialLink) => (
+			<SocialIconWithLink
+				href={socialLink.url}
+				icon={socialLink.iconName}
+				title={socialLink.title}
+			/>
+		))
+	}
 </div>
