@@ -1,9 +1,13 @@
 .container {
-    margin: 2rem 0;
+	margin: 2rem 0;
 }
 
 img {
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
+	height: 64px;
+	width: 64px;
+	border-radius: 50%;
+}
+
+p {
+	margin: 1rem 0;
 }
