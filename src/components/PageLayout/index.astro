@@ -1,5 +1,6 @@
 ---
 import "@fontsource/spectral";
+
 import "./styles.css";
 
 interface Props {
@@ -7,6 +8,14 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+const SEO = {
+	description:
+		"Abhishek jha, Full stack developer, Software engineer, Developer portfolio",
+	keywords:
+		"portfolio, javascript, developer, python, aws, full stack, frontend, backend, typescript, next, react",
+	image: "/images/profile-photo-transparent.png",
+};
 ---
 
 <html lang="en">
@@ -15,15 +24,43 @@ const { title } = Astro.props;
 		<link
 			rel="icon"
 			type="image/svg+xml"
-			href="/images/profile-photo-transparent.png"
+			href={SEO.image}
 		/>
 		<meta
 			name="viewport"
-			content="width=device-width"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 		<meta
 			name="generator"
 			content={Astro.generator}
+		/>
+		<meta
+			name="description"
+			content={SEO.description}
+		/>
+		<meta
+			name="keyword"
+			content={SEO.keywords}
+		/>
+		<meta
+			property="og:title"
+			content={title}
+		/>
+		<meta
+			property="og:description"
+			content={SEO.description}
+		/>
+		<meta
+			property="og:image"
+			content={SEO.image}
+		/>
+		<meta
+			property="og:url"
+			content="https://portfolio-e88.pages.dev"
+		/>
+		<meta
+			property="og:type"
+			content="website"
 		/>
 		<title>{title}</title>
 	</head>
