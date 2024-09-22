@@ -3,7 +3,7 @@ import type { Props as ExperienceProps } from "../components/ExperienceSection/E
 export const ExperienceData: ExperienceProps[] = [
 	{
 		companyName: "Setu",
-		companyLogo: "/images/setu.png",
+		companyLogo: "/images/setu.jpg",
 		companyWebsite: "https://setu.co/",
 		jobTitle: "SDE 1 - Full Stack",
 		duration: "June 2023 - Present",
@@ -21,7 +21,7 @@ export const ExperienceData: ExperienceProps[] = [
 	},
 	{
 		companyName: "Setu",
-		companyLogo: "/images/setu.png",
+		companyLogo: "/images/setu.jpg",
 		companyWebsite: "https://setu.co/",
 		jobTitle: "SDE Intern - Frontend",
 		duration: "September 2022 - April 2023",

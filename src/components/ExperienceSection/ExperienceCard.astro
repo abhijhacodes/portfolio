@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets";
+
+import "./styles.css";
+
 export interface Props {
 	companyName: string;
 	companyLogo: string;
@@ -8,4 +12,29 @@ export interface Props {
 	points: string[];
 	techStack: string[];
 }
+
+const {
+	companyName,
+	companyLogo,
+	companyWebsite,
+	jobTitle,
+	duration,
+	points,
+	techStack,
+} = Astro.props;
 ---
+
+<div class="experience-head">
+	<Image
+		src={companyLogo}
+		alt={companyName}
+		class="company-logo"
+		width={48}
+		height={48}
+	/>
+
+	<div class="company-description">
+		<h2>{jobTitle} &#183; {companyName}</h2>
+		<p>{duration}</p>
+	</div>
+</div>

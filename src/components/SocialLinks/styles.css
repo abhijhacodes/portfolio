@@ -32,6 +32,8 @@
 		justify-content: flex-start;
 		gap: 4rem;
 		padding: 0.5rem 0;
+		opacity: 0;
+		animation: slide-down-on-load 0.5s linear 1.5s forwards;
 	}
 
 	.social-icon {

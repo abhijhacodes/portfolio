@@ -1,14 +1,15 @@
-.container {
+.about-container {
 	margin-top: 2rem;
 }
 
-img {
+.profile-photo {
 	height: 64px;
 	width: 64px;
 	border-radius: 50%;
 }
 
-p {
+.about-p-1,
+.about-p-2 {
 	opacity: 0;
 	margin: 1rem 0;
 }

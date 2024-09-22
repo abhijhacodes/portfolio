@@ -1,0 +1,35 @@
+.experience-container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	opacity: 0;
+	animation: slide-down-on-load 0.5s linear 2s forwards;
+}
+
+.companies {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.company-logo {
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+}
+
+.experience-head {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.company-description {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.company-description > p {
+	color: var(--secondary-text-color);
+}

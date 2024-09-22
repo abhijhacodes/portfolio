@@ -3,8 +3,10 @@ import { ExperienceData } from "../../data/experience.ts";
 import ExperienceCard from "./ExperienceCard.astro";
 ---
 
-<h2>My work experience</h2>
+<div class="experience-container">
+	<h2>My work experience</h2>
 
-<div>
-	{ExperienceData.map((experience) => <ExperienceCard {...experience} />)}
+	<div class="companies">
+		{ExperienceData.map((experience) => <ExperienceCard {...experience} />)}
+	</div>
 </div>
