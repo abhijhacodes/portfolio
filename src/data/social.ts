@@ -16,7 +16,7 @@ export const SocialLinksData: SocialLink[] = [
 	},
 	{
 		title: "Email",
-		url: "mailto:abhi.jha.cs@gmail.com",
+		url: "mailto:abhi.jha.cs@gmail.com?subject=Hii%20from%20portfolio%20👋",
 		iconName: "simple-icons:gmail",
 	},
 	{
