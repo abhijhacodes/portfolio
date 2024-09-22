@@ -9,7 +9,7 @@
 
 @media (min-width: 768px) {
 	.page-container {
-		padding: 0 2rem;
+		padding: 0 2rem 6rem 2rem;
 		max-width: 720px;
 		gap: 3rem;
 	}
