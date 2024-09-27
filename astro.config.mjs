@@ -8,4 +8,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
 	site: "https://abhijha.in",
 	integrations: [icon(), sitemap()],
+	image: {
+		domains: ["cdn3.emoji.gg"],
+	},
 });
