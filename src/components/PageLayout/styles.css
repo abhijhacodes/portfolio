@@ -1,6 +1,6 @@
 .page-container {
 	width: 100%;
-	padding: 0 1rem 6rem 1rem;
+	padding: 1.5rem 1.5rem 6rem;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -9,7 +9,7 @@
 
 @media (min-width: 768px) {
 	.page-container {
-		padding: 0 2rem 6rem 2rem;
+		padding: 2rem 2rem 6rem;
 		max-width: 720px;
 		gap: 3rem;
 	}
