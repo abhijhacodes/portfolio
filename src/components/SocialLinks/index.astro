@@ -6,10 +6,14 @@ import { SocialLinksData } from "../../data/social";
 import SocialIconWithLink from "./SocialIconWithLink.astro";
 ---
 
-<div class="social-icons-container">
-	{
-		SocialLinksData.map((socialLink) => (
-			<SocialIconWithLink {...socialLink} />
-		))
-	}
+<div class="social">
+	<p class="social-intro">My online alter egos:</p>
+
+	<div class="social-icons-container">
+		{
+			SocialLinksData.map((socialLink) => (
+				<SocialIconWithLink {...socialLink} />
+			))
+		}
+	</div>
 </div>

@@ -6,6 +6,7 @@
 	text-decoration: none;
 	opacity: 0;
 	animation: slide-down-on-load 0.5s linear 2s forwards;
+	margin-top: 0.5rem;
 }
 
 .resume-link:hover {
@@ -15,5 +16,6 @@
 @media (min-width: 768px) {
 	.resume-link {
 		animation: slide-down-on-load 0.5s linear 2.5s forwards;
+		margin-top: 0;
 	}
 }

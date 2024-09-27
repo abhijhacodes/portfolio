@@ -1,3 +1,15 @@
+.social {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.social-intro {
+	color: var(--primary-color);
+	font-weight: 500;
+	display: none;
+}
+
 .social-icons-container {
 	display: flex;
 	width: calc(100% - 3rem);
@@ -28,17 +40,25 @@
 }
 
 @media (min-width: 768px) {
-	.social-icons-container {
-		position: static;
-		border: none;
-		justify-content: flex-start;
-		gap: 4rem;
-		padding: 0.5rem 0;
+	.social {
 		opacity: 0;
 		animation: slide-down-on-load 0.5s linear 1.5s forwards;
 	}
 
+	.social-icons-container {
+		width: auto;
+		position: static;
+		border: none;
+		justify-content: flex-start;
+		gap: 4rem;
+		padding: 0;
+	}
+
 	.social-icon {
 		font-size: 1.5rem;
+	}
+
+	.social-intro {
+		display: block;
 	}
 }
