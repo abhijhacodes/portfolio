@@ -14,15 +14,8 @@ export interface Props {
 	techStack: string[];
 }
 
-const {
-	companyName,
-	companyLogo,
-	companyWebsite,
-	jobTitle,
-	duration,
-	points,
-	techStack,
-} = Astro.props;
+const { companyName, companyLogo, companyWebsite, jobTitle, duration } =
+	Astro.props;
 ---
 
 <div class="experience-card">
