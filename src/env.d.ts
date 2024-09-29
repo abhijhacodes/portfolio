@@ -2,6 +2,7 @@
 
 interface ImportMeta {
 	readonly env: {
-		readonly PUBLIC_RESUME_LINK: string;
+		readonly PUBLIC_RESUME_URL: string;
+		readonly PUBLIC_SANKHYA_URL: string;
 	};
 }
