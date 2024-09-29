@@ -2,9 +2,14 @@ import type { Props as SocialLinkProps } from "../components/SocialLinks/SocialI
 
 export const SocialLinksData: SocialLinkProps[] = [
 	{
-		title: "Linkedin",
-		url: "https://www.linkedin.com/in/abhijhacodes/",
-		iconName: "ri:linkedin-fill",
+		title: "LeetCode",
+		url: "https://leetcode.com/u/bitmasker/",
+		iconName: "simple-icons:leetcode",
+	},
+	{
+		title: "Gitlab",
+		url: "https://gitlab.com/abhijhacodes",
+		iconName: "simple-icons:gitlab",
 	},
 	{
 		title: "GitHub",
@@ -12,9 +17,9 @@ export const SocialLinksData: SocialLinkProps[] = [
 		iconName: "ri:github-line",
 	},
 	{
-		title: "LeetCode",
-		url: "https://leetcode.com/u/bitmasker/",
-		iconName: "simple-icons:leetcode",
+		title: "Linkedin",
+		url: "https://www.linkedin.com/in/abhijhacodes/",
+		iconName: "ri:linkedin-fill",
 	},
 	{
 		title: "Email",
