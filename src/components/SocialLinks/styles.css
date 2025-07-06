@@ -50,7 +50,7 @@
 		position: static;
 		border: none;
 		justify-content: flex-start;
-		gap: 4rem;
+		gap: 2rem;
 		padding: 0;
 	}
 
@@ -60,5 +60,11 @@
 
 	.social-intro {
 		display: block;
+	}
+}
+
+@media (min-width: 1024px) {
+	.social-icons-container {
+		gap: 4rem;
 	}
 }
