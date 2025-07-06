@@ -8,44 +8,59 @@ export interface Props {
 	companyName: string;
 	companyLogo: string;
 	companyWebsite: string;
-	jobTitle: string;
-	duration: string;
-	points: string[];
-	techStack: string[];
+	positions: {
+		jobTitle: string;
+		duration: string;
+		points?: string[];
+		techStack?: string[];
+	}[];
 }
 
-const { companyName, companyLogo, companyWebsite, jobTitle, duration } =
-	Astro.props;
+const { companyName, companyLogo, companyWebsite, positions } = Astro.props;
 ---
 
 <div class="experience-card">
-	<div class="experience-head">
-		<Image
-			src={companyLogo}
-			alt={companyName}
-			class="company-logo"
-			width={48}
-			height={48}
-		/>
+	<Image
+		src={companyLogo}
+		alt={companyName}
+		class="company-logo"
+		width={48}
+		height={48}
+	/>
 
-		<div class="company-description">
-			<h3>
-				{jobTitle} &middot; {companyName}
-				<span>
-					<a
-						href={companyWebsite}
-						target="_blank"
-					>
-						<Icon
-							name="ri:arrow-right-up-line"
-							title={companyWebsite}
-							class="external-link"
-						/></a
-					>
-				</span>
-			</h3>
+	<div class="company-description">
+		<h3 class="company-name">
+			{companyName} 
+			<span>
+				<a
+					href={companyWebsite}
+					target="_blank"
+				>
+					<Icon
+						name="ri:arrow-right-up-line"
+						title={companyWebsite}
+						class="external-link"
+					/></a
+				>
+			</span>
+		</h3>
 
-			<p>{duration}</p>
+		<div class="positions-container">
+			{positions.map((position, index) => (
+				<div class="position-container">
+					{positions.length > 1 && 
+						<div class="timeline-container">
+							<div class="timeline-dot"></div>
+							{index < positions.length - 1 && <div class="timeline-line"></div>}
+						</div>
+					}
+
+					<div class="position">
+						<h3>{position.jobTitle}</h3>
+						<p>{position.duration}</p>
+					</div>
+				</div>
+			))}
 		</div>
 	</div>
 </div>
