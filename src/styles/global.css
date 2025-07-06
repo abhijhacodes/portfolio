@@ -38,6 +38,9 @@ h2 {
 h3 {
 	font-size: 1.125rem;
 }
+h4 {
+	font-size: 1rem;
+}
 
 @media screen and (min-width: 768px) {
 	p {
@@ -51,6 +54,9 @@ h3 {
 	}
 	h3 {
 		font-size: 1.25rem;
+	}
+	h4 {
+		font-size: 1.125rem;
 	}
 }
 
